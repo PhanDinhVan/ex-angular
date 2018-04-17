@@ -1,0 +1,8 @@
+<div *ngFor="let person of arrPersons" >
+  <app-person 
+    [name]="person.name" 
+    [age]="person.age"
+    (removePerson)="removePersonByName($event)" >
+
+  </app-person>
+</div>

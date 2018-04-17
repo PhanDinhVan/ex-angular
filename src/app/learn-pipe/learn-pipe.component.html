@@ -1,0 +1,13 @@
+<p>
+  {{ birthday | date: 'shortTime' }}
+</p>
+<p>
+  {{ person | json | uppercase }}
+</p>
+<!-- dung async khi data tren serve tra ve co kieu du lieu la Promise -->
+<p>
+  {{ address | async }}
+</p>
+<p> {{ 1.9 | roundNum : false : 10 }} </p>
+<p> {{ 0.45 | roundNum : false : 5}} </p>
+<p> {{ 4.5 | roundNum : true : 1 }} </p>
